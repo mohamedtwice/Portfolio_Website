@@ -1,0 +1,30 @@
+<section class="topsection pageheader" ng-init="sc.getRepos()">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-12">
+        <h1 class="pageheadertitle">Github Portfolio</h1>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="github">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-6" ng-repeat="repo in sc.repos | orderBy: '-updated_at'">
+        <div class="repoBox">
+          <h3 class="repoName"><a href="{{repo.svn_url}}" target="_blank">{{repo.name}}</a></h3>
+          <p class="repoDate">Date Updated: <span class="repoSpan">{{repo.updated_at | date}}</p>
+          <p class="repoDate">Date Created: <span class="repoSpan">{{repo.created_at | date}}</p>
+          <p class="repoLang">Language: <span class="repoSpan">{{repo.language}}</span></p>
+          <a class="repoUrl" href="{{repo.svn_url}}" target="_blank">Click Here to View Repository</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+</section>

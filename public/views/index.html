@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Mohamed H. Mohamed</title>
+  <script src="vendors/angular.min.js" charset="utf-8"></script>
+  <script src="vendors/angular-route.min.js" charset="utf-8"></script>
+  <script src="scripts/client.js" charset="utf-8"></script>
+  <script src="scripts/github.service.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container">
+
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">Mohamed H. Mohamed</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="pull-right">
+        <ul class="nav nav-pills">
+          <li role="presentation"><a href="#!/">Home</a></li>
+          <li role="presentation"><a href="#!/about">About</a></li>
+          <li role="presentation"><a href="#!/github">Github</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- /.container -->
+  </nav>
+  <!-- /.container -->
+
+  <div ng-app="myApp" ng-controller='SectionController as sc'>
+
+    <ng-view>
+
+    </ng-view>
+  </div>
+
+  <footer class="">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="footerinfo">
+            <h2 class="footername">Mohamed H. Mohamed</h2>
+            <h3 class="footerlocation">Minneapolis-St. Paul</h3>
+            <h4 class="footercontactinfo">651-621-0914 | mohamed@bsmg.co</h4>
+          </div>
+        </div>
+        <div class="col-sm-3 col-xs-6">
+          <div class="footerlinks">
+            <h3 class="footertitle">Social</h3>
+            <ul class="list-group">
+              <li class="list-group-item"><a href="https://www.linkedin.com/in/mohamedtwice/">LinkedIn</a></li>
+              <li class="list-group-item"><a href="https://www.twitter.com/mohknowsreal/">Twitter</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-3 col-xs-6">
+          <div class="footerlinks">
+            <h3 class="footertitle">Work</h3>
+            <ul class="list-group">
+              <li class="list-group-item"><a href="https://www.github.com/mohamedtwice/">Github</a></li>
+              <li class="list-group-item"><a href="http://www.bsmg.co/">BSMG Digital</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
